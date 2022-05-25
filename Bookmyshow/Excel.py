@@ -13,7 +13,7 @@ class ExcelUtils:
     Total_main_database_Column = None
 
     def __init__(self):
-        ExcelUtils.url = "Resources\\Bookmyshow.xlsx"
+        ExcelUtils.url = "Resources\\BookMyShow.xlsx"
         ExcelUtils.workbook = openpyxl.load_workbook(ExcelUtils.url)
         ExcelUtils.sheet = ExcelUtils.workbook.worksheets[0]
         ExcelUtils.Total_row = ExcelUtils.sheet.max_row
